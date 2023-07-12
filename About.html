@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- google font link neeche wali -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">  
+<!-- font awesom for font neeche wali -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i><!--used for close icon from font awesome-->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Course.html">COURSE</a></li>
+                    <li><a href="Blog.htm">BLOG</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i><!--used for menu tag-->
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!--About Us Content-->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the World Biggest University</h1>
+                <p2>Discover excellence, embrace knowledge's embrace.
+                    A sanctuary of wisdom, where minds truly soar.
+                    Guided by virtue, fostering brilliance and grace.
+                    Jaatshakti University, where futures adore.</p2><br><br>
+                <a href="Explore.html" class="hero-btn red-btn"> EXPLORE NOW </a> <!--hero btn phle hi thi pr color whit ki wajh se dikh nahi rahi thi sliye  red=btn add kiya hai-->
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p2>At Jaatshakti University, we take immense pride in our institution and the unique educational experience we offer. Here is a brief overview of who we are <br>Jaatshakti University is a renowned institution committed to providing excellence in education,research, and  holistic development.<br> Our university is built on the pillars of knowledge, cultural heritage, and empowerment. We strive to create a nurturing <br>and inclusive environment that fosters intellectual growth, critical thinking, and the pursuit of innovation.</p2>
+        <div class="icons">
+            <a href="https://www.facebook.com/ch.mohitsingh.7"><i class="fa fa-facebook"></i></a>
+            <a href="https://instagram.com/singhch.mohit?igshid=MzRlODBiNWFlZA=="><i class="fa fa-instagram"></i></a>
+            <!-- <i class="fa fa-instagram"></i> -->
+            <a href="https://www.linkedin.com/in/mohit-singh-641b5524a/"><i class="fa fa-linkedin"></i></a>
+            <!-- <i class="fa fa-linkedin"></i> -->
+            <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope"></i></a>
+            <!-- <i class="fa fa-envelope"></i> -->
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> by Mohit Singh </p>
+        <p>_____________________________________________________________</p>
+        <p>Copyright <i class="fa fa-copyright"> World Bigeest University </i> all rights are reserved<br>CHAUDHARY MOHIT SINGH</p>
+    </section>
+
+
+<!--javascrippt  for toogle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+    <!--javascript end-->
+    
+</body>
+</html>
