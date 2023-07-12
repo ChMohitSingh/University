@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- google font link neeche wali -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">  
+<!-- font awesom for font neeche wali -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i><!--used for close icon from font awesome-->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Course.html">COURSE</a></li>
+                    <li><a href="Blog.htm">BLOG</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i><!--used for menu tag-->
+        </nav>
+        <h1> Our Certificate & and Progrms For 2023 </h1>
+    </section>
+
+    <!--Blog Content-->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg">
+                <h2> Our Certificate & and Progrms For 2023 </h2>
+                <p2>
+                    At Jaatshakti University, we offer a wide range of certificate programs and degree programs for the year 2023, designed to cater to the diverse interests and career aspirations of our students. Here are some of the programs we offer</p2>
+                <br> <br>
+                <p2>Bachelor of Science in Engineering (Civil, Mechanical, Electrical): Choose from various engineering disciplines and gain a comprehensive understanding of the principles and applications of your chosen field.</p2>
+                <br> <br>
+                <p2>These programs are designed to provide students with comprehensive knowledge, practical skills, and opportunities for personal and professional growth. At Jaatshakti University, we are committed to preparing our students for successful careers and fulfilling lives</p2>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name" required="">
+                        <input type="email" placeholder="Enter Email" required="">
+                        <textarea rows="5" placeholder="your comment">
+                        </textarea>
+                        <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Master of Business Administration (MBA)</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Master of Arts in English Literature</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>Jouranalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Bachelor of Fine Arts</span>
+                    <span>30</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p2>At Jaatshakti University, we take immense pride in our institution and the unique educational experience we offer. Here is a brief overview of who we are <br>Jaatshakti University is a renowned institution committed to providing excellence in education,research, and  holistic development.<br> Our university is built on the pillars of knowledge, cultural heritage, and empowerment. We strive to create a nurturing <br>and inclusive environment that fosters intellectual growth, critical thinking, and the pursuit of innovation.</p2>
+        <div class="icons">
+            <a href="https://www.facebook.com/ch.mohitsingh.7"><i class="fa fa-facebook"></i></a>
+            <a href="https://instagram.com/singhch.mohit?igshid=MzRlODBiNWFlZA=="><i class="fa fa-instagram"></i></a>
+            <!-- <i class="fa fa-instagram"></i> -->
+            <a href="https://www.linkedin.com/in/mohit-singh-641b5524a/"><i class="fa fa-linkedin"></i></a>
+            <!-- <i class="fa fa-linkedin"></i> -->
+            <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope"></i></a>
+            <!-- <i class="fa fa-envelope"></i> -->
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> by Mohit Singh </p>
+        <p>_____________________________________________________________</p>
+        <p>Copyright <i class="fa fa-copyright"> Jaatshakti University </i> all rights are reserved<br>CHAUDHARY MOHIT SINGH</p>
+    </section>
+
+
+<!--javascrippt  for toogle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+    <!--javascript end-->
+    
+</body>
+</html>
