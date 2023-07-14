@@ -96,9 +96,9 @@ nav .fa{
        position: absolute;
        background: #f44336;
        height: 100vh;
-       width: 225px;
+       width: 215px;
        top: 0;
-       right: -225px;
+       right: -215px;
        text-align: left;
        z-index: 2;
        transition: 1s;
